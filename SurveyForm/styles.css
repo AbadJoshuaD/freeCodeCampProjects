@@ -23,7 +23,7 @@ body {
 
 .grid-container {
   background-color: white;
-  width: 950px;
+  width: 80%;
   height: auto;
   margin: 0 auto;
 }
@@ -83,4 +83,15 @@ input[type="radio"] {
   width: 96px;
   margin: 10px;
   border: 0px solid;
+}
+
+@media (max-width: 675px) {
+  .label {
+    text-align: left;
+  }
+  .rowTab {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+  }
 }
