@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: #be3144;
+  font-weight: 500;
+  font-size: 2em;
+}
+.navbar .nav-list {
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  justify-content: end;
+  color: #ffffff;
+  list-style-type: none;
+  margin-right: 20px;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  height: 75px;
+  width: 100%;
+}
+.nav-link:hover {
+  background-color: #45567d;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+  height: 100vh;
+  width: auto;
+  background-color: #28282b;
+}
+
+.welcome-section h1 {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 5em;
+}
+.welcome-section p {
+  color: #be3144;
+  font-weight: 200;
+  font-size: 3em;
+}
+
+.projects {
+  display: grid;
+  grid-auto-rows: 1fr 4fr 1fr;
+  height: 1560px;
+  background-color: #45567d;
+}
+
+.projects h1 {
+  display: flex;
+  text-underline-position: under;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 50px;
+}
+
+.projects-container .project-container {
+  background-color: white;
+}
+
+.project-container {
+  display: grid;
+  grid-template-rows: 0.8fr 0.2fr;
+  border: 1px solid black;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+.project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.5em;
+  background-color: #303841;
+}
+
+.project-title span {
+  visibility: hidden;
+}
+
+.project-title:hover .prog-tag {
+  padding: 0 10px;
+  visibility: visible;
+  color: orange;
+}
+.projects .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects button {
+  width: 150px;
+  height: 60px;
+  background-color: #303841;
+  color: #ffffff;
+  font-size: 1.5em;
+  border: none;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #303841;
+  height: 600px;
+  border-bottom: 5px solid #be3144;
+}
+.contacts h1 {
+  font-weight: 900;
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+
+.contacts p {
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.contacts .social {
+  padding: 65px 20px 20px 0;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  font-size: 1.75rem;
+}
+
+.social * {
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social a {
+  padding-right: 30px;
+}
+
+.footer {
+  background-color: #303841;
+  height: 100px;
+}
+
+.footer * {
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  padding: 20px 90px 20px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    height: 2460px;
+  }
+  .projects h1 {
+    text-align: center;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
+    height: 1760px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  .footer * {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .footer p {
+    padding: 10px;
+  }
+
+  .contacts p {
+    font-weight: 200;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .contacts .social {
+    display: flex;
+    justify-content: center;
+    padding: 65px 10px 10px 10px;
+    flex-wrap: wrap;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    font-size: 1.25rem;
+  }
+
+  .contacts h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .social a {
+    padding: 10px;
+  }
+
+  .welcome-section h1 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 3em;
+  }
+
+  .navbar {
+    font-size: 1.5em;
+  }
+
+  .navbar .nav-list {
+    margin: 0px;
+  }
+}
